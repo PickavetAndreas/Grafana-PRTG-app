@@ -1,0 +1,694 @@
+{
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": "-- Grafana --",
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "type": "dashboard"
+        }
+      ]
+    },
+    "editable": true,
+    "gnetId": null,
+    "graphTooltip": 0,
+    "id": null,
+    "iteration": 1590509827878,
+    "links": [],
+    "panels": [
+      {
+        "datasource": "$Datasources",
+        "fieldConfig": {
+          "defaults": {
+            "custom": {}
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 6,
+          "x": 0,
+          "y": 0
+        },
+        "id": 11,
+        "options": {
+          "piechartElements": [
+            {
+                "color": "red",
+                "label": "Alarms",
+                "value": "Alarms"
+                },
+                {
+                "color": "rgb(32, 79, 156)",
+                "label": "PausedSens",
+                "value": "PausedSens"
+                },
+                {
+                "color": "green",
+                "label": "UpSens",
+                "value": "UpSens"
+                },
+                {
+                "color": "orange",
+                "label": "WarnSens",
+                "value": "WarnSens"
+                },
+              {
+                "color": "rgb(112, 112, 112)",
+                "label": "UnknownSens",
+                "value": "UnknownSens"
+              },
+              {
+                "color": "rgb(240, 232, 119)",
+                "label": "UnusualSens",
+                "value": "UnusualSens"
+              },
+              {
+                "color": "rgb(240, 134, 145)",
+                "label": "AckAlarms",
+                "value": "AckAlarms"
+              },
+              {
+                "color": "rgb(196, 73, 117)",
+                "label": "PartialAlarms",
+                "value": "PartialAlarms"
+              }
+            ],
+          "piechartType": {
+            "label": "Pie",
+            "value": "pie"
+          }
+        },
+        "targets": [
+          {
+            "messageFilterDrel": {
+              "label": "today",
+              "value": "today"
+            },
+            "queryMethod": {
+              "label": "status",
+              "value": "status"
+            },
+            "rawQuerytext": "",
+            "rawURI": "",
+            "refId": "A",
+            "selectedDevice": {
+              "label": "Choose Device",
+              "value": "0"
+            },
+            "selectedGroup": {
+              "label": "Choose Group",
+              "value": "0"
+            },
+            "selectedSensor": {
+              "label": "Choose Sensor",
+              "value": "0"
+            },
+            "tableFilterString": "",
+            "tableOption": {
+              "label": "group",
+              "value": "group"
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "$Datasources - Status",
+        "type": "status-plugin"
+      },
+      {
+        "datasource": "$Datasources",
+        "fieldConfig": {
+          "defaults": {
+            "custom": {}
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 18,
+          "x": 6,
+          "y": 0
+        },
+        "id": 13,
+        "options": {
+          "columnWidthList": {}
+        },
+        "targets": [
+          {
+            "messageFilterDrel": {
+              "label": "today",
+              "value": "today"
+            },
+            "queryMethod": {
+              "label": "table",
+              "value": "table"
+            },
+            "rawQuerytext": "",
+            "rawURI": "",
+            "refId": "A",
+            "selectedDevice": {
+              "label": "Choose Device",
+              "value": "0"
+            },
+            "selectedGroup": {
+              "label": "Root",
+              "value": 0
+            },
+            "selectedSensor": {
+              "label": "Choose Sensor",
+              "value": "0"
+            },
+            "tableColumnItems": [
+              {
+                "label": "status",
+                "value": "status"
+              },
+              {
+                "label": "message",
+                "value": "message_raw"
+              },
+              {
+                "label": "lastup",
+                "value": "lastup_raw"
+              }
+            ],
+            "tableFilterString": "&filter_status=5",
+            "tableOption": {
+              "label": "sensor",
+              "value": "sensor"
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "$Datasources - Alarms",
+        "type": "myorgid-prtg-table-panel"
+      },
+      {
+        "datasource": "$Datasources",
+        "fieldConfig": {
+          "defaults": {
+            "custom": {}
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 24,
+          "w": 4,
+          "x": 0,
+          "y": 8
+        },
+        "id": 2,
+        "targets": [
+          {
+            "messageFilterDrel": {
+              "label": "today",
+              "value": "today"
+            },
+            "queryMethod": {
+              "label": "table",
+              "value": "table"
+            },
+            "rawQuerytext": "",
+            "rawURI": "",
+            "refId": "A",
+            "selectedDevice": {
+              "label": "Choose Device",
+              "value": "0"
+            },
+            "selectedGroup": {
+              "label": "Root",
+              "value": 0
+            },
+            "selectedSensor": {
+              "label": "Choose Sensor",
+              "value": "0"
+            },
+            "tableColumnItems": [
+              {
+                "label": "objid",
+                "value": "objid"
+              },
+              {
+                "label": "parentid",
+                "value": "parentid"
+              },
+              {
+                "label": "type",
+                "value": "type"
+              }
+            ],
+            "tableFilterString": "",
+            "tableOption": {
+              "label": "group",
+              "value": "group"
+            }
+          },
+          {
+            "messageFilterDrel": {
+              "label": "today",
+              "value": "today"
+            },
+            "queryMethod": {
+              "label": "table",
+              "value": "table"
+            },
+            "rawQuerytext": "",
+            "rawURI": "",
+            "refId": "B",
+            "selectedDevice": {
+              "label": "Choose Device",
+              "value": "0"
+            },
+            "selectedGroup": {
+              "label": "Root",
+              "value": 0
+            },
+            "selectedSensor": {
+              "label": "Choose Sensor",
+              "value": "0"
+            },
+            "tableColumnItems": [
+              {
+                "label": "objid",
+                "value": "objid"
+              },
+              {
+                "label": "parentid",
+                "value": "parentid"
+              },
+              {
+                "label": "type",
+                "value": "type"
+              }
+            ],
+            "tableFilterString": "",
+            "tableOption": {
+              "label": "device",
+              "value": "device"
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "$Datasources - Tree",
+        "type": "myorgid-simple-panel-tree"
+      },
+      {
+        "aliasColors": {},
+        "bars": false,
+        "dashLength": 10,
+        "dashes": false,
+        "datasource": "$Datasources",
+        "fieldConfig": {
+          "defaults": {
+            "custom": {}
+          },
+          "overrides": []
+        },
+        "fill": 1,
+        "fillGradient": 0,
+        "gridPos": {
+          "h": 8,
+          "w": 11,
+          "x": 4,
+          "y": 8
+        },
+        "hiddenSeries": false,
+        "id": 4,
+        "legend": {
+          "avg": false,
+          "current": false,
+          "max": false,
+          "min": false,
+          "show": true,
+          "total": false,
+          "values": false
+        },
+        "lines": true,
+        "linewidth": 1,
+        "nullPointMode": "null",
+        "options": {
+          "dataLinks": []
+        },
+        "percentage": false,
+        "pointradius": 2,
+        "points": false,
+        "renderer": "flot",
+        "repeat": "Sensors",
+        "repeatDirection": "v",
+        "seriesOverrides": [],
+        "spaceLength": 10,
+        "stack": false,
+        "steppedLine": false,
+        "targets": [
+          {
+            "messageFilterDrel": {
+              "label": "today",
+              "value": "today"
+            },
+            "queryMethod": {
+              "label": "historicdata",
+              "value": "historicdata"
+            },
+            "rawQuerytext": "",
+            "rawURI": "",
+            "refId": "A",
+            "selectedDevice": {
+              "label": "Choose Device",
+              "value": "0"
+            },
+            "selectedGroup": {
+              "label": "Choose Group",
+              "value": "0"
+            },
+            "selectedSensor": {
+              "label": "$Sensors",
+              "value": "$Sensors"
+            },
+            "tableFilterString": "",
+            "tableOption": {
+              "label": "group",
+              "value": "group"
+            }
+          }
+        ],
+        "thresholds": [],
+        "timeFrom": null,
+        "timeRegions": [],
+        "timeShift": null,
+        "title": "$Sensors",
+        "tooltip": {
+          "shared": true,
+          "sort": 0,
+          "value_type": "individual"
+        },
+        "type": "graph",
+        "xaxis": {
+          "buckets": null,
+          "mode": "time",
+          "name": null,
+          "show": true,
+          "values": []
+        },
+        "yaxes": [
+          {
+            "format": "short",
+            "label": null,
+            "logBase": 1,
+            "max": null,
+            "min": null,
+            "show": true
+          },
+          {
+            "format": "short",
+            "label": null,
+            "logBase": 1,
+            "max": null,
+            "min": null,
+            "show": true
+          }
+        ],
+        "yaxis": {
+          "align": false,
+          "alignLevel": null
+        }
+      },
+      {
+        "datasource": "$Datasources",
+        "fieldConfig": {
+          "defaults": {
+            "custom": {
+              "align": null
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 9,
+          "x": 15,
+          "y": 8
+        },
+        "id": 7,
+        "options": {
+          "angular": {
+            "aliasColors": {},
+            "bars": false,
+            "dashLength": 10,
+            "dashes": false,
+            "fill": 1,
+            "fillGradient": 0,
+            "hiddenSeries": false,
+            "legend": {
+              "avg": false,
+              "current": false,
+              "max": false,
+              "min": false,
+              "show": true,
+              "total": false,
+              "values": false
+            },
+            "lines": true,
+            "linewidth": 1,
+            "nullPointMode": "null",
+            "options": {
+              "dataLinks": []
+            },
+            "percentage": false,
+            "pointradius": 2,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "stack": false,
+            "steppedLine": false,
+            "thresholds": [],
+            "timeRegions": [],
+            "tooltip": {
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ],
+            "yaxis": {
+              "align": false,
+              "alignLevel": null
+            }
+          },
+          "showHeader": true
+        },
+        "pluginVersion": "7.0.0-beta3",
+        "repeat": "Sensors",
+        "repeatDirection": "v",
+        "targets": [
+          {
+            "messageFilterDrel": {
+              "label": "today",
+              "value": "today"
+            },
+            "queryMethod": {
+              "label": "historicdata",
+              "value": "historicdata"
+            },
+            "rawQuerytext": "",
+            "rawURI": "",
+            "refId": "A",
+            "selectedDevice": {
+              "label": "Choose Device",
+              "value": "0"
+            },
+            "selectedGroup": {
+              "label": "Choose Group",
+              "value": "0"
+            },
+            "selectedSensor": {
+              "label": "$Sensors",
+              "value": "$Sensors"
+            },
+            "tableFilterString": "",
+            "tableOption": {
+              "label": "group",
+              "value": "group"
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "$Sensors",
+        "type": "table"
+      }
+    ],
+    "refresh": "",
+    "schemaVersion": 25,
+    "style": "dark",
+    "tags": [],
+    "templating": {
+      "list": [
+        {
+          "current": {
+            "selected": true,
+            "text": "PRTG-Datasource-faut",
+            "value": "PRTG-Datasource-faut"
+          },
+          "hide": 0,
+          "includeAll": false,
+          "label": "Datasources",
+          "multi": false,
+          "name": "Datasources",
+          "options": [],
+          "query": "lebon-it-services-prtg-datasource",
+          "queryValue": "",
+          "refresh": 1,
+          "regex": "",
+          "skipUrlSync": false,
+          "type": "datasource"
+        },
+        {
+          "allValue": null,
+          "current": {
+            "selected": false,
+            "text": "Local Network",
+            "value": "50"
+          },
+          "datasource": "$Datasources",
+          "definition": "group:*",
+          "hide": 0,
+          "includeAll": false,
+          "label": "AllGroups",
+          "multi": false,
+          "name": "AllGroups",
+          "options": [],
+          "query": "group:*",
+          "refresh": 1,
+          "regex": "",
+          "skipUrlSync": false,
+          "sort": 0,
+          "tagValuesQuery": "",
+          "tags": [],
+          "tagsQuery": "",
+          "type": "query",
+          "useTags": false
+        },
+        {
+          "allValue": null,
+          "current": {
+            "selected": false,
+            "text": "HPAE6160",
+            "value": "2009"
+          },
+          "datasource": "$Datasources",
+          "definition": "device:$AllGroups",
+          "hide": 0,
+          "includeAll": false,
+          "label": "Devices",
+          "multi": false,
+          "name": "Devices",
+          "options": [],
+          "query": "device:$AllGroups",
+          "refresh": 1,
+          "regex": "",
+          "skipUrlSync": false,
+          "sort": 0,
+          "tagValuesQuery": "",
+          "tags": [],
+          "tagsQuery": "",
+          "type": "query",
+          "useTags": false
+        },
+        {
+          "allValue": null,
+          "current": {
+            "selected": true,
+            "tags": [],
+            "text": "2063 + 2046",
+            "value": [
+              "2063",
+              "2046"
+            ]
+          },
+          "datasource": "$Datasources",
+          "definition": "sensor:$Devices",
+          "hide": 0,
+          "includeAll": false,
+          "label": "Sensors",
+          "multi": true,
+          "name": "Sensors",
+          "options": [],
+          "query": "sensor:$Devices",
+          "refresh": 1,
+          "regex": "",
+          "skipUrlSync": false,
+          "sort": 0,
+          "tagValuesQuery": "",
+          "tags": [],
+          "tagsQuery": "",
+          "type": "query",
+          "useTags": false
+        }
+      ]
+    },
+    "time": {
+      "from": "now-6h",
+      "to": "now"
+    },
+    "timepicker": {
+      "refresh_intervals": [
+        "10s",
+        "30s",
+        "1m",
+        "5m",
+        "15m",
+        "30m",
+        "1h",
+        "2h",
+        "1d"
+      ]
+    },
+    "timezone": "",
+    "title": "Infrastructure Dashboard",
+    "uid": "r9AFAZkMk",
+    "version": 10
+  }

@@ -1,0 +1,54 @@
+{
+  "type": "app",
+  "name": "Grafana-PRTG-app",
+  "id": "lebon-it-services-prtg-app",
+  "info": {
+    "description": "PRTG",
+    "author": {
+      "name": "Andreas Pickavet",
+      "url": "lebonitservices.be"
+    },
+    "keywords": [
+      "PRTG",
+      "App"
+    ],
+    "logos": {
+      "small": "img/prtglogo.png",
+      "large": "img/prtglogo.png"
+    },
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "includes": [
+    {
+      "type": "dashboard",
+      "name": "overview dashboard",
+      "path": "dashboards/overview.json"
+    },
+    {
+      "type": "dashboard",
+      "name": "environment dashboard",
+      "path": "dashboards/environment.json"
+    },
+    {
+      "type": "panel",
+      "name": "Status Panel"
+    },
+    {
+      "type": "panel",
+      "name": "PRTG table panel"
+    },
+    {
+      "type": "datasource",
+      "name": "PRTG-Datasource"
+    },
+    {
+      "type": "panel",
+      "name": "PRTG Tree panel"
+    }
+  ],
+  "dependencies": {
+    "grafanaVersion": "6.3.x",
+    "plugins": []
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "datasource",
+  "name": "PRTG-Datasource",
+  "id": "lebon-it-services-prtg-datasource",
+  "metrics": true,
+  "info": {
+    "description": "Datasource for monitoringdata from the PRTG-API",
+    "author": {
+      "name": "Andreas Pickavet",
+      "url": "lebonitservices.be"
+    },
+    "keywords": [
+      "PRTG-API"
+    ],
+    "logos": {
+      "small": "img/prtglogo.png",
+      "large": "img/prtglogo.png"
+    },
+    "links": [
+      {
+        "name": "Website",
+        "url": "https://github.com/grafana/simple-datasource"
+      },
+      {
+        "name": "License",
+        "url": "https://github.com/grafana/simple-datasource/blob/master/LICENSE"
+      }
+    ],
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "dependencies": {
+    "grafanaVersion": "6.5.x",
+    "plugins": []
+  }
+}

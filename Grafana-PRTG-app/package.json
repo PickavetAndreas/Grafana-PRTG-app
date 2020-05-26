@@ -1,0 +1,38 @@
+{
+  "name": "lebon-it-services-prtg-app",
+  "version": "1.0.0",
+  "description": "PRTG",
+  "scripts": {
+    "build": "grafana-toolkit plugin:build",
+    "test": "grafana-toolkit plugin:test",
+    "dev": "grafana-toolkit plugin:dev",
+    "watch": "grafana-toolkit plugin:dev --watch"
+  },
+  "repository": "github:grafana/simple-react-panel",
+  "author": "Andreas Pickavet",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/grafana/simple-react-panel/issues",
+    "email": "plugins@grafana.com"
+  },
+  "devDependencies": {
+    "@grafana/data": "next",
+    "@grafana/toolkit": "next",
+    "@grafana/ui": "next"
+  },
+  "engines": {
+    "node": ">=12 <13"
+  },
+  "dependencies": {
+    "@grafana/runtime": "^7.0.0",
+    "@types/lodash": "^4.14.152",
+    "@types/styled-components": "^5.1.0",
+    "lodash": "^4.17.15",
+    "react-simple-tree-menu": "^1.1.15",
+    "react-table": "^7.1.0",
+    "react-virtualized-tree": "^3.4.0",
+    "react-vtree": "^1.0.2",
+    "react-window": "^1.8.5",
+    "styled-components": "^5.1.0"
+  }
+}

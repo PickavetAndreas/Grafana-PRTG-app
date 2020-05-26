@@ -1,0 +1,30 @@
+
+{
+  "type": "panel",
+  "name": "PRTG table panel",
+  "id": "myorgid-prtg-table-panel",
+
+  "info": {
+    "description": "PRTG table baned based on the React Table package",
+    "author": {
+      "name": "Andreas Pickavet"
+    },
+    "keywords": ["Table, React"],
+    "logos": {
+      "small": "img/prtglogo.png",
+      "large": "img/prtglogo.png"
+    },
+    "links": [
+      {"name": "Website", "url": "https://github.com/grafana/simple-react-panel"},
+      {"name": "License", "url": "https://github.com/grafana/simple-react-panel/blob/master/LICENSE"}
+    ],
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "6.3.x",
+    "plugins": []
+  }
+}

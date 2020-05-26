@@ -1,0 +1,327 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": null,
+  "iteration": 1590507998783,
+  "links": [],
+  "panels": [
+    {
+      "collapsed": false,
+      "datasource": null,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 13,
+      "panels": [],
+      "title": "All - Alarms",
+      "type": "row"
+    },
+    {
+      "datasource": "-- Mixed --",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 1
+      },
+      "id": 18,
+      "options": {
+        "columnWidthList": {}
+      },
+      "targets": [
+        {
+          "datasource": "PRTG-DatasourceE",
+          "messageFilterDrel": {
+            "label": "today",
+            "value": "today"
+          },
+          "queryMethod": {
+            "label": "table",
+            "value": "table"
+          },
+          "rawQuerytext": "",
+          "rawURI": "",
+          "refId": "A",
+          "selectedDevice": {
+            "label": "Choose Device",
+            "value": "0"
+          },
+          "selectedGroup": {
+            "label": "Root",
+            "value": 0
+          },
+          "selectedSensor": {
+            "label": "Choose Sensor",
+            "value": "0"
+          },
+          "tableColumnItems": [
+            {
+              "label": "status",
+              "value": "status"
+            },
+            {
+              "label": "message",
+              "value": "message_raw"
+            },
+            {
+              "label": "lastup",
+              "value": "lastup_raw"
+            }
+          ],
+          "tableFilterString": "&filter_status=5",
+          "tableOption": {
+            "label": "sensor",
+            "value": "sensor"
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "All Alarms",
+      "type": "myorgid-prtg-table-panel"
+    },
+    {
+      "collapsed": false,
+      "datasource": null,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 9
+      },
+      "id": 6,
+      "panels": [],
+      "repeat": "Datasources",
+      "title": "$Datasources - overview",
+      "type": "row"
+    },
+    {
+      "datasource": "$Datasources",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 6,
+        "x": 0,
+        "y": 10
+      },
+      "id": 2,
+      "links": [
+        {
+          "targetBlank": true,
+          "title": "show infrastructure dashboard",
+          "url": "http://localhost:3000/d/r9AFAZkMk/testdatatable?var-Datasources=${Datasources}"
+        }
+      ],
+      "options": {
+        "piechartElements": [
+        {
+            "color": "red",
+            "label": "Alarms",
+            "value": "Alarms"
+            },
+            {
+            "color": "rgb(32, 79, 156)",
+            "label": "PausedSens",
+            "value": "PausedSens"
+            },
+            {
+            "color": "green",
+            "label": "UpSens",
+            "value": "UpSens"
+            },
+            {
+            "color": "orange",
+            "label": "WarnSens",
+            "value": "WarnSens"
+            },
+          {
+            "color": "rgb(112, 112, 112)",
+            "label": "UnknownSens",
+            "value": "UnknownSens"
+          },
+          {
+            "color": "rgb(240, 232, 119)",
+            "label": "UnusualSens",
+            "value": "UnusualSens"
+          },
+          {
+            "color": "rgb(240, 134, 145)",
+            "label": "AckAlarms",
+            "value": "AckAlarms"
+          },
+          {
+            "color": "rgb(196, 73, 117)",
+            "label": "PartialAlarms",
+            "value": "PartialAlarms"
+          }
+        ],
+        "piechartType": {
+          "label": "Pie",
+          "value": "pie"
+        }
+      },
+      "repeat": null,
+      "repeatDirection": "v",
+      "targets": [
+        {
+            "queryMethod": {
+              "label": "status",
+              "value": "status"
+            }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "$Datasources - Status",
+      "type": "status-plugin"
+    },
+    {
+      "datasource": "$Datasources",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 18,
+        "x": 6,
+        "y": 10
+      },
+      "id": 8,
+      "options": {
+        "columnWidthList": {}
+      },
+      "targets": [
+        {
+          "messageFilterDrel": {
+            "label": "today",
+            "value": "today"
+          },
+          "queryMethod": {
+            "label": "table",
+            "value": "table"
+          },
+          "rawQuerytext": "",
+          "rawURI": "",
+          "refId": "A",
+          "selectedDevice": {
+            "label": "Choose Device",
+            "value": "0"
+          },
+          "selectedGroup": {
+            "label": "Root",
+            "value": 0
+          },
+          "selectedSensor": {
+            "label": "Choose Sensor",
+            "value": "0"
+          },
+          "tableColumnItems": [
+            {
+              "label": "status",
+              "value": "status"
+            },
+            {
+              "label": "message",
+              "value": "message_raw"
+            },
+            {
+              "label": "lastup",
+              "value": "lastup_raw"
+            }
+          ],
+          "tableFilterString": "&filter_status=5",
+          "tableOption": {
+            "label": "sensor",
+            "value": "sensor"
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "$Datasources - Alarms",
+      "type": "myorgid-prtg-table-panel"
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 25,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "selected": true,
+          "tags": [],
+          "text": "PRTG-DatasourceE",
+          "value": [
+            "PRTG-DatasourceE"
+          ]
+        },
+        "hide": 0,
+        "includeAll": false,
+        "label": "Datasources",
+        "multi": true,
+        "name": "Datasources",
+        "options": [],
+        "query": "lebon-it-services-prtg-datasource",
+        "queryValue": "",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "type": "datasource"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ]
+  },
+  "timezone": "",
+  "title": "Overzichtdashboard",
+  "uid": "-1L2nzzGk",
+  "version": 9
+}

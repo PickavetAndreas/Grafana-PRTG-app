@@ -1,0 +1,29 @@
+{
+  "type": "panel",
+  "name": "PRTG Tree panel",
+  "id": "myorgid-simple-panel-tree",
+
+  "info": {
+    "description": "Simple React Panel",
+    "author": {
+      "name": "Andreas Pickavet"
+    },
+    "keywords": ["PRTG"],
+    "logos": {
+      "small": "img/prtglogo.png",
+      "large": "img/prtglogo.png"
+    },
+    "links": [
+      {"name": "Website", "url": "https://github.com/grafana/simple-react-panel"},
+      {"name": "License", "url": "https://github.com/grafana/simple-react-panel/blob/master/LICENSE"}
+    ],
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "6.3.x",
+    "plugins": []
+  }
+}
