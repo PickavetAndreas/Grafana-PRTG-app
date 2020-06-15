@@ -108,7 +108,7 @@ export class TreePanel extends PureComponent<Props> {
     groupsTreeNodes = this.addItemsToGroups(groupsTreeNodes, devicesTreeNodes);
 
     // prtg -> root_id = 0 and probe_id=1, but root is group so change root_id to 1 for easy of use
-    var rootIndex = groupsTreeNodes.findIndex((group: any) => group.key === 'Root');
+    var rootIndex = groupsTreeNodes.findIndex((group: any) => group.objid === 0);
     groupsTreeNodes[rootIndex].objid = 1;
 
     //loop over all groups until only root remains
